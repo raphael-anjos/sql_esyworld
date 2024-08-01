@@ -1,0 +1,22 @@
+##01..Atualiza na Tabela de Pedido o código da Revenda para o CodigoRevendaGerado no cadastro de Cliente.
+##Utilizando o código de cliente das entidades para relacionamento.
+update vd_pedido as vdp join cd_cliente as cli
+on vdp.cod_cliente = cli.cod_cliente
+set vdp.cod_revenda = cli.cod_revenda_gerado
+where vdp.cod_cliente = 6 and vdp.dt_implant < '2011-12-31'
+
+##02..Atualiza na Tabela de Pedido o código da Revenda para o CodigoColaboradorRevenda no cadastro de Cliente,
+##quando o cod_revenda = 0 na entidade de pedidos vd_pedido.
+##Utilizando o código de cliente das entidades para relacionamento.
+update vd_pedido as vdp join cd_cliente as cli
+on vdp.cod_cliente = cli.cod_cliente
+set vdp.cod_revenda = cli.cod_colaborador_revenda
+where vdp.cod_revenda = 0 and vdp.dt_implant < '2011-12-31'
+
+##03..Atualiza na Tabela de Pedido o código da Revenda para o CodigoColaboradorRevenda no cadastro de Cliente,
+##quando o cod_revenda é null na entidade de pedidos vd_pedido.
+##Utilizando o código de cliente das entidades para relacionamento.
+update vd_pedido as vdp join cd_cliente as cli
+on vdp.cod_cliente = cli.cod_cliente
+set vdp.cod_revenda = cli.cod_colaborador_revenda
+where vdp.cod_revenda is null and vdp.dt_implant < '2011-12-31'

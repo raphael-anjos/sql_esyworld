@@ -1,0 +1,5 @@
+SELECT PIN, COUNT(*)
+FROM ProdutoAfiliadoPIN 
+WHERE IdAfiliado = 456
+GROUP BY PIN
+HAVING COUNT(*)>1 

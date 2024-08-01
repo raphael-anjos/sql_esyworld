@@ -1,0 +1,61 @@
+SELECT ccusto FROM at_oportunidade WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM cc_pedido WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM cc_pedido_item WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM cc_requisicao WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM cc_requisicao_item WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM cd_cliente_contato WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM cd_transportadora WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM eq_conferencia_separacao WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM eq_recebimento  WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM eq_recebimento_item WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM eq_requisicao WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM eq_unidade_armazenagem WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_apontamento WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_centro_custo_colaborador WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_extrato_historico WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_orcamento WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_periodo_contabil WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_plano_conta_ccusto WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_titulo_pagar WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_titulo_pagar_rateio WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_titulo_receber WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM fn_titulo_receber_rateio WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM oc_ocorrencia WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM pp_ordem_producao WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM sg_colaborador WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM sv_plano_servico_item WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM vd_pedido WHERE ccusto IS NOT NULL;
+SELECT ccusto FROM vd_pedido_item WHERE ccusto IS NOT NULL;
+
+
+
+##UPDATE
+update at_oportunidade set ccusto = 'FIN' where ccusto = '1';
+update cc_pedido set ccusto = 'FIN' where ccusto = '1';
+update cc_pedido_item set ccusto = 'FIN' where ccusto = '1';
+update cc_requisicao set ccusto = 'FIN' where ccusto = '1';
+update cc_requisicao_item set ccusto = 'FIN' where ccusto = '1';
+update cd_cliente_contato set ccusto = 'FIN' where ccusto = '1';
+update cd_transportadora set ccusto = 'FIN' where ccusto = '1';
+update eq_conferencia_separacao set ccusto = 'FIN' where ccusto = '1';
+update eq_recebimento  set ccusto = 'FIN' where ccusto = '1';
+update eq_recebimento_item set ccusto = 'FIN' where ccusto = '1';
+update eq_requisicao set ccusto = 'FIN' where ccusto = '1';
+update eq_unidade_armazenagem set ccusto = 'FIN' where ccusto = '1';
+update fn_apontamento set ccusto = 'FIN' where ccusto = '1';
+update fn_centro_custo_colaborador set ccusto = 'FIN' where ccusto = '1';
+update fn_extrato_historico set ccusto = 'FIN' where ccusto = '1';
+update fn_orcamento set ccusto = 'FIN' where ccusto = '1';
+update fn_periodo_contabil set ccusto = 'FIN' where ccusto = '1';
+update fn_plano_conta_ccusto set ccusto = 'FIN' where ccusto = '1';
+update fn_titulo_pagar set ccusto = 'FIN' where ccusto = '1';
+update fn_titulo_pagar_rateio set ccusto = 'FIN' where ccusto = '1';
+update fn_titulo_receber set ccusto = 'FIN' where ccusto = '1';
+update fn_titulo_receber_rateio set ccusto = 'FIN' where ccusto = '1';
+update oc_ocorrencia set ccusto = 'FIN' where ccusto = '1';
+update pp_ordem_producao set ccusto = 'FIN' where ccusto = '1';
+update sg_colaborador set ccusto = 'FIN' where ccusto = '1';
+update sv_plano_servico_item set ccusto = 'FIN' where ccusto = '1';
+update vd_pedido set ccusto = 'FIN' where ccusto = '1';
+update vd_pedido_item set ccusto = 'FIN' where ccusto = '1';
+
